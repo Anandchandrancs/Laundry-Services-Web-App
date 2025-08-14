@@ -52,9 +52,114 @@
                 <p>Experience</p>
             </div>
         </section>
+        <section class="section-service">
+            <div class="main-service">
+                <div class="left-service">
+                    <h2>Our Services</h2>
+                    <p class="left-top-info">Click on The Add to Cart Button To Add The Service To Your Cart</p>
+                    <div id="services"></div>
+                    <p class="info">ⓘ Add the items to the cart and book now</p>
+                </div>
+                <div class="right-service">
+                    <h2 class="add-item">Added Items</h2>
+                    <div id="cart"></div>
+                    <div class="total">Total Amount: ₹<span id="totalAmount">0.00</span></div>
 
+                    <h2 class="book-heading">Book Now</h2>
+                    <label for="fullName" class="label-text">Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe" required>
+                    <div class="sub-input-row">
+                        <div class="sub-input-group">
+                            <label for="email" class="label-text">Email ID</label>
+                            <input type="email" id="email" class="sub-input" placeholder="mailid@gmail.com" required>
+                        </div>
+                        <div class="sub-input-group">
+                            <label for="phone" class="label-text">Phone Number</label>
+                            <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" class="sub-input" placeholder="0000000000" required>
+                        </div>
+                    </div>
+                    <button class="book-btn" onclick="bookNow()">Book Now</button>
+                    <div class="confirmation" id="confirmationMessage"></div>
+            </div>
+        </section>
+        <section class="section-quality">
+            <div class="quality-all">
+                <div class="quality-item">
+                    <ion-icon class="icon-big" name="browsers-outline"></ion-icon>
+                    <h3>Premium Services</h3>
+                    <p>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+                </div>
+                <div class="quality-item">
+                    <ion-icon class="icon-big" name="people-circle-outline"></ion-icon>
+                    <h3>Quick Support</h3>
+                    <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free</p>
+                </div>
+                <div class="quality-item">
+                    <ion-icon class="icon-big" name="paper-plane-outline"></ion-icon>
+                    <h3>Hassle Free Delivery</h3>
+                    <p>Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+                </div>
+                <div class="quality-item">
+                    <ion-icon class="icon-big" name="cash-outline"></ion-icon>
+                    <h3>Affordable Prices</h3>
+                    <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day stress-free </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="section-subscribe">
+            <div class="subscribe-row">
+                <div class="sub-left">
+                    <h2 class="sub-left-heading">Subscribe to Our newsletter.</h2>
+                </div>
+                <div class="sub-right">
+                    <div class="sub-inputs">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </div>
+
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="row-footer">
+            <div class="footer_sec_1">
+                <h2 class="footer-logo">Logo</h2>
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, reprehenderit.</p>
+            </div>
+            <div class="footer_sec_2">
+                <h3>Important Links</h3>
+                <ul class="footer-nav">
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_sec_3">
+                <h3>Contact</h3>
+                <p>mail@site.com</p>
+                <p>+91 91234 56780</p>
+            </div>
+            <div class="footer_sec_4">
+                <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#"><ion-icon class="insta" name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="fb" name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="youtube" name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row-copyright">
+            <p>Copyright &copy; 2025 by Anand. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="resources/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
