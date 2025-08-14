@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #ffffff;
+    color: #555;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: Segoe UI, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.main-nav{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #575757;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 90%;
+    /* text-transform: uppercase; */
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    color: #1f4af5;
+    border-bottom: 3px solid #1f4af5;
+}
+
+.username{
+    background-color: #91daff;
+    color: #0842ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.username:hover{
+    background-color: #0842ff;
+    color: #ffffff;
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 40px auto 0 auto;
+    padding: 40px 20px;
+    gap: 50px; /* space between text and image */
+}
+
+.hero-text-box {
+    flex: 0 0 55%;
+    padding: 20px 30px 20px 0;
+}
+
+.hero-image-box {
+    flex: 0 0 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 30px;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-text-box h1 {
+    font-size: 2.5rem;
+    /* margin-bottom: 20px; */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.hero-blue{
+    color: #47b6df;
+    margin-bottom: 10px;
+}
+
+.hero-text-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #aeadad;
+}
+
+.hero-text-box a {
+    display: inline-block;
+    background-color: #47b6df;
+    color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-text-box a:hover,
+.hero-text-box a:active {
+    background-color: #0842ff;
+}
+
+.section-achievements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 1140px; */
+    margin: 40px auto 0 auto;
+    background-color: #24a4ff;
+    padding: 40px 80px;
+}
+
+.achievements {
+    flex: 0 0 35%;
+    padding-left: 100px;
+    /* padding: 20px 30px 20px 0; */
+}
+
+.achievement-item {
+    flex: 0 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.achievement-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.achievement-item p {
+    font-size: 0.8rem;
+    color: #636363;
+    font-weight: 600;
+}
+
